@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Title</th>
+                    <th>Type</th>
+                    <th>LatLong</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each weather}}
+                    <tr>
+                        <td>{{this.woeid}}</td>
+                        <td>{{this.title}}</td>
+                        <td>{{this.location_type}}</td>
+                        <td>{{this.latt_long}}</td>
+                    </tr>
+                 {{/each}}
+
+            </tbody>
+            
+        </table>
+        
+    </body>
+</html>
